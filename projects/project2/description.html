@@ -6,14 +6,36 @@
     <title>V!ckDA - Biographie</title>
     <link rel="stylesheet" href="../../style.css">
     <style>
-        body {
-            min-height: 100vh;
+        html, body {
+            height: 100%;
             margin: 0;
+            padding: 0;
+            overflow-y: auto;
+        }
+        body {
             display: flex;
             flex-direction: column;
         }
         main {
             flex: 1;
+            padding: 20px;
+        }
+        header, footer {
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
         }
     </style>
 </head>
