@@ -1,5 +1,6 @@
 /* style.css */
 
+/* Reset des marges et paddings pour le corps et HTML */
 html, body {
     height: 100%;
     margin: 0;
@@ -13,15 +14,18 @@ body {
     flex-direction: column;
 }
 
-main {
-    flex: 1;
-    padding: 20px;
-}
-
-header, footer {
-    background-color: #f1f1f1;
+/* Style de l'entête */
+header {
+    background-color: #333; /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
     padding: 20px;
     text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Ombre légère */
+}
+
+header h1 {
+    font-size: 2.5rem; /* Taille du titre principal */
+    margin-bottom: 10px; /* Espacement sous le titre */
 }
 
 nav ul {
@@ -31,10 +35,12 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 10px;
+    margin-right: 20px; /* Espacement entre les éléments de navigation */
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #000;
+    color: #fff; /* Couleur du texte des liens */
+    font-size: 1.2rem; /* Taille du texte des liens */
 }
+
